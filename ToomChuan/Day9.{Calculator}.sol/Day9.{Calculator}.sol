@@ -47,7 +47,7 @@ contract Calculator {
         return result;
     }
 
-    function calulateSquareRoot(uint256 number) public pure returns(uint256) {
+    function calulateSquareRoot(uint256 number) public returns(uint256) {
         require(number >= 0, "Cannot calculate square root of negative number");
 
         bytes memory data =abi.encodeWithSignature("squareRoot(uint256)", number);
